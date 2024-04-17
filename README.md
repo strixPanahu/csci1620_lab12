@@ -14,15 +14,15 @@
 
 		- [ ] i. MIN_VOLUME: This is meant to serve as a constant. Its default value should be 0.
 
-		- [ ] ii. MAXVOLUME: This is meant to serve as a constant. Its default value should be 2.
+		- [ ] ii. MAX_VOLUME: This is meant to serve as a constant. Its default value should be 2.
 
-		- [ ] iii. MINCHANNEL: This is meant to serve as a constant. Its default value should be 0.
+		- [ ] iii. MIN_CHANNEL: This is meant to serve as a constant. Its default value should be 0.
 
-		- [ ] iv. MAXCHANNEL: This is meant to serve as a constant. Its default value should be 3.
+		- [ ] iv. MAX_CHANNEL: This is meant to serve as a constant. Its default value should be 3.
 
 		* Where applicable, use these constant variable names rather than hard coding values in your class methods.
 
-	- [ ] b. Instance variables (To be declared in the __init___ method):
+	- [ ] b. Instance variables (To be declared in the __ init __ method):
 
 		- [ ] i. status: This should be treated as a Boolean variable whose initial value is False.
 
@@ -33,6 +33,7 @@
 		- [ ] iv. channel: This should be treated as an integer variable whose initial value is the minimum channel.
 
 		* All the instance variables should be private.
+      
 	- [ ] c. Methods:
 
 		- [ ] i. def__ init__(self): This should be used to set the default instance variables.
@@ -63,7 +64,7 @@
 
 - [ ] 7. Add docstrings and type hinting to the methods in television.py.
 
-- [ ] 8. Create anew python file called test_television.py. Write unit tests for the _init__, power, mute, channel_up, channel_down, volume_up, andvolume_down methods using the external pytest library (please follow the standards fornaming unit test functions).
+- [ ] 8. Create anew python file called test_television.py. Write unit tests for the _init__, power, mute, channel_up, channel_down, volume_up, andvolume_down methods using the external pytest library (please follow the standards for naming unit test functions).
 
 - [ ] 9. Commit the changes to your test branch (At this point the test branch should only contain television.py and test_television.py. Don’t add any extra files or folders — meaning if more files other than television.py and test_television.py appear at the time of committing, make sure to uncheck them that way they are not part of the files saved to your repository). 
 

@@ -60,83 +60,83 @@
 
 - [x] 5. Push your repository to your GitHub account.
 
-- [ ] 6. Create a new branch named test on your local Git repository (make sure it’s set as the checkout branch — meaning any new changes are going to be saved to it moving forward).
+- [x] 6. Create a new branch named test on your local Git repository (make sure it’s set as the checkout branch — meaning any new changes are going to be saved to it moving forward).
 
-- [ ] 7. Add docstrings and type hinting to the methods in television.py.
+- [x] 7. Add docstrings and type hinting to the methods in television.py.
 
-- [ ] 8. Create anew python file called test_television.py. Write unit tests for the _init__, power, mute, channel_up, channel_down, volume_up, andvolume_down methods using the external pytest library (please follow the standards for naming unit test functions).
+- [x] 8. Create a new python file called test_television.py. Write unit tests for the __ init __, power, mute, channel_up, channel_down, volume_up, and volume_down methods using the external pytest library (please follow the standards for naming unit test functions).
 
-- [ ] 9. Commit the changes to your test branch (At this point the test branch should only contain television.py and test_television.py. Don’t add any extra files or folders — meaning if more files other than television.py and test_television.py appear at the time of committing, make sure to uncheck them that way they are not part of the files saved to your repository). 
+- [x] 9. Commit the changes to your test branch (At this point the test branch should only contain television.py and test_television.py. Don’t add any extra files or folders — meaning if more files other than television.py and test_television.py appear at the time of committing, make sure to uncheck them that way they are not part of the files saved to your repository). 
 
-- [ ] 10. Push the changes to your GitHub account repository.
+- [x] 10. Push the changes to your GitHub account repository.
 
-- [ ] 11. Submit the link of your public remote repository.
+- [x] 11. Submit the link of your public remote repository.
 
 ## **Please note:**
 
-- [ ] 12. Don’t merge the 2 branches (we need to check you followed the instructions).
+- [x] 12. Don’t merge the 2 branches (we need to check you followed the instructions).
 
-- [ ] 13. Make sure any new changes to your code are pushed to the test branch.
+- [x] 13. Make sure any new changes to your code are pushed to the test branch.
 
-- [ ] 14. Refer to the testing notes and lecture on how to work with the pytest library.
+- [x] 14. Refer to the testing notes and lecture on how to work with the pytest library.
 
-- [ ] 15. Things to test for in the various methods:
+- [x] 15. Things to test for in the various methods:
 
-	- [ ] a. init:
+	- [x] a. init:
 
-		- [ ] i. The status, channel, and volume values.
+		- [x] i. The status, channel, and volume values.
 
-		- [ ] ii. Since you don’t have getter methods, you can use the __str__ method to check the tv values.
+		- [x] ii. Since you don’t have getter methods, you can use the __str__ method to check the tv values.
 
-	- [ ] b. power:
+	- [x] b. power:
 
-		- [ ] i. The tv details when the tv is on.
+		- [x] i. The tv details when the tv is on.
 
-		- [ ] ii. The tv details when the tv is off.
+		- [x] ii. The tv details when the tv is off.
 
-	- [ ] c. mute:
+	- [x] c. mute:
 
-		- [ ] i. The tv details when the tv is on, volume increased once, and then tv muted.
+		- [x] i. The tv details when the tv is on, volume increased once, and then tv muted.
 
-		- [ ] ii. The tv details when the tv is on and unmuted.
+		- [x] ii. The tv details when the tv is on and unmuted.
 
-		- [ ] iii. The tv details when the tv is off and muted.
+		- [x] iii. The tv details when the tv is off and muted.
 
-		- [ ] iv. The tv details when the tv is off and unmuted.
+		- [x] iv. The tv details when the tv is off and unmuted.
 
-	- [ ] d. channel_up:
+	- [x] d. channel_up:
 
-		- [ ] i. The tv details when the tv is off and the channel has been increased.
+		- [x] i. The tv details when the tv is off and the channel has been increased.
 
-		- [ ] ii. The tv details when the tv is on and the channel has been increased.
+		- [x] ii. The tv details when the tv is on and the channel has been increased.
 
-		- [ ] iii. The tv details when the tv is on and one has increased the channel past the maximum value.
+		- [x] iii. The tv details when the tv is on and one has increased the channel past the maximum value.
 
-	- [ ] e. channel_down:
+	- [x] e. channel_down:
 
-		- [ ] i. The tv details when the tv is off and the channel has been decreased.
+		- [x] i. The tv details when the tv is off and the channel has been decreased.
 
-		- [ ] ii. The tv details when the tv is on and one has decreased the channel past the minimum value.
+		- [x] ii. The tv details when the tv is on and one has decreased the channel past the minimum value.
 
-	- [ ] f. volume_up:
+	- [x] f. volume_up:
 
-		- [ ] i. The tv details when the tv is off and the volume has been increased.
+		- [x] i. The tv details when the tv is off and the volume has been increased.
 
-		- [ ] ii. The tv details when the tv is on and the volume has been increased.
+		- [x] ii. The tv details when the tv is on and the volume has been increased.
 
-		- [ ] iii. The tv details when the tv is on, muted, and the volume has been increased.
+		- [x] iii. The tv details when the tv is on, muted, and the volume has been increased.
 
-		- [ ] iv. The tv details when the tv is on and one has increased the volume past the maximum value.
+		- [x] iv. The tv details when the tv is on and one has increased the volume past the maximum value.
 
-	- [ ] g. volume_down:
+	- [x] g. volume_down:
 
-		- [ ] i. The tv details when the tv is off and the volume has been decreased.
+		- [x] i. The tv details when the tv is off and the volume has been decreased.
 
-		- [ ] ii. The tv details when the tv is on and the volume has been decreased (increase the volume to the maximum before decreasing to see the decreasing effect).
+		- [x] ii. The tv details when the tv is on and the volume has been decreased (increase the volume to the maximum before decreasing to see the decreasing effect).
 
-		- [ ] iii. The tv details when the tv is on, muted, and the volume has been decreased.
+		- [x] iii. The tv details when the tv is on, muted, and the volume has been decreased.
 
-		- [ ] iv. The tv details when the tv is on and one has decreased the volume past the minimum value.
+		- [x] iv. The tv details when the tv is on and one has decreased the volume past the minimum value.
 
 * The GitHub repository link can be found here:
 

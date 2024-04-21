@@ -14,29 +14,27 @@ class Television:
     MIN_CHANNEL = 0
     MAX_CHANNEL = 3
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Television object with power, channels, volume, and muting.
         """
         self.__status = False
         self.__muted = False
-        self.__volume = self.MIN_VOLUME
-        self.__channel = self.MIN_CHANNEL
+        self.__volume = Television.MIN_VOLUME
+        self.__channel = Television.MIN_CHANNEL
 
-    def power(self):
+    def power(self) -> None:
         """
         Power TV on or off
-        :return: None
         """
         if self.__status:
             self.__status = False
         else:
             self.__status = True
 
-    def mute(self):
+    def mute(self) -> None:
         """
         Enable or disable TV mute
-        :return: None
         """
         if not self.__status:
             pass
@@ -46,50 +44,46 @@ class Television:
             self.__muted = True
             self.__volume = 0
 
-    def channel_up(self):
+    def channel_up(self) -> None:
         """
         Cycle channel by one increment
-        :return:
         """
         if not self.__status:
             pass
-        elif self.__channel == self.MAX_CHANNEL:
-            self.__channel = self.MIN_CHANNEL
+        elif self.__channel == Television.MAX_CHANNEL:
+            self.__channel = Television.MIN_CHANNEL
         else:
             self.__channel += 1
 
-    def channel_down(self):
+    def channel_down(self) -> None:
         """
         Cycle channel by one decrement
-        :return: None
         """
         if not self.__status:
             pass
-        elif self.__channel == self.MIN_CHANNEL:
-            self.__channel = self.MAX_CHANNEL
+        elif self.__channel == Television.MIN_CHANNEL:
+            self.__channel = Television.MAX_CHANNEL
         else:
             self.__channel -= 1
 
-    def volume_up(self):
+    def volume_up(self) -> None:
         """
         Increase volume by one unit
-        :return: None
         """
         if self.__muted:
             self.mute()
 
-        if self.__status and self.__volume < self.MAX_VOLUME:
+        if self.__status and self.__volume < Television.MAX_VOLUME:
             self.__volume += 1
 
-    def volume_down(self):
+    def volume_down(self) -> None:
         """
         Decrease volume by one unit
-        :return: None
         """
         if self.__muted:
             self.mute()
 
-        if self.__status and self.__volume > self.MIN_VOLUME:
+        if self.__status and self.__volume > Television.MIN_VOLUME:
             self.__volume -= 1
 
     def __str__(self) -> str:
@@ -100,3 +94,17 @@ class Television:
         return ("Power = " + str(self.__status)
                 + ", Channel = " + str(self.__channel)
                 + ", Volume = " + str(self.__volume))
+
+
+tv = Television()
+tv.power()
+tv.volume_up()
+tv.power()
+tv.mute()
+print(tv.__str__())
+
+tv = Television()
+tv.power()
+tv.volume_up()
+tv.mute()
+print(tv.__str__())

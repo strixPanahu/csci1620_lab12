@@ -138,18 +138,96 @@
 
 		- [x] iv. The tv details when the tv is on and one has decreased the volume past the minimum value.
 
-* The GitHub repository link can be found here:
+## **FEEDBACK**
 
-    Go to file | Add file | **<> Code**
+[x] 16. television.py 
 
-    Local | Codespaces (New)
+	[x] a. init 
 
-    Clone | (?)
+		[x] i. Missing type hinting (should return None) 
 
-    HTTPS | SSH | GitHub CLI
+	[x] b. power 
 
-    **https://github.com/username/python.git**
+		[x] i. Missing type hinting (should return None) 
 
-    Use Git or checkout with SVN using the web URL
+		[x] ii. Incorrect docstrings (need only function description – don’t include param or return) 
 
-    Open with GitHub Desktop
+	[x] c. mute 
+
+		[x] i. Logic error in method (should only mute if tv is on) 
+
+		[x] ii. Missing type hinting (should return None) 
+
+		[x] iii. Incorrect docstrings (need only function description – don’t include param or return) 
+
+	[x] d. channel_up 
+
+		[x] i. Missing type hinting (should return None) 
+
+		[x] ii. Incorrect docstrings (need only function description – don’t include param or return) 
+
+	[x] e. channel_down 
+
+		[x] i. Missing type hinting (should return None) 
+
+		[x] ii. Incorrect docstrings (need only function description – don’t include param or return) 
+
+	[x] f. volume_up 
+
+		[x] i. Missing type hinting (should return None) 
+
+		[x] ii. Incorrect docstrings (need only function description – don’t include param or return) 
+
+volume_down 
+
+[x] -0.5pts: Missing type hinting (should return None) 
+
+[x] -0.5pts: Incorrect docstrings (need only function description – don’t include param or return) 
+
+str 
+
+[x] -1pt: Logic error (output when volume is muted) 
+
+[x] -1pt: Your output statements should follow the same format as the ones provided in the main.py file comments Advice: It’s better to use Television.MIN_CHANNEL rather than self.MIN_CHANNEL (refer to the discussion video minute 12:41 on the implication of using self vs the class name when it comes to class variables). 
+
+test_television.py 
+
+[x] -12pts: Use pytest library not unit test library (refer to the Testing notes and lecture. Lecture minute 33:18 to 43:20, Notes - slide 9 and 10) test_mute: 
+
+[x] -1pt: Unit test fails 
+
+test_volume_up: 
+
+[x] -1pt: Unit test fails
+
+	"C:/Program Files/JetBrains/PyCharm Community Edition 2023.3.2/plugins/python-ce/helpers/pycharm _jb_pytest_runner.py" --target test_television.py::TestTelevision 
+	Testing started at 8:50 PM ...
+	Launching pytest with arguments py test_television.py::TestTelevision --no-header --no-summary -q in C:	\PycharmProjects\csci1620_lab12
+
+	============================= test session starts =============================
+	collecting ... collected 20 items
+
+	test_television.py::TestTelevision::test_pass_init PASSED                [  5%]
+	test_television.py::TestTelevision::test_pass_power_on PASSED            [ 10%]
+	test_television.py::TestTelevision::test_pass_power_off PASSED           [ 15%]
+	test_television.py::TestTelevision::test_pass_mute_on PASSED             [ 20%]
+	test_television.py::TestTelevision::test_pass_mute_off PASSED            [ 25%]
+	test_television.py::TestTelevision::test_pass_mute_on_no_power PASSED    [ 30%]
+	test_television.py::TestTelevision::test_pass_mute_off_no_power PASSED   [ 35%]
+	test_television.py::TestTelevision::test_pass_channel_up_no_power PASSED [ 40%]
+	test_television.py::TestTelevision::test_pass_channel_up PASSED          [ 45%]
+	test_television.py::TestTelevision::test_pass_channel_up_max PASSED      [ 50%]
+	test_television.py::TestTelevision::test_pass_channel_down_no_power PASSED [ 55%]
+	test_television.py::TestTelevision::test_pass_channel_down_min PASSED    [ 60%]
+	test_television.py::TestTelevision::test_pass_volume_up_no_power PASSED  [ 65%]
+	test_television.py::TestTelevision::test_pass_volume_up PASSED           [ 70%]
+	test_television.py::TestTelevision::test_pass_volume_up_mute PASSED      [ 75%]
+	test_television.py::TestTelevision::test_pass_volume_up_max PASSED       [ 80%]
+	test_television.py::TestTelevision::test_pass_volume_down_no_power PASSED [ 85%]
+	test_television.py::TestTelevision::test_pass_volume_down PASSED         [ 90%]
+	test_television.py::TestTelevision::test_pass_volume_down_mute PASSED    [ 95%]
+	test_television.py::TestTelevision::test_pass_volume_down_min PASSED     [100%]
+
+	============================= 20 passed in 0.05s ==============================
+
+	Process finished with exit code 0

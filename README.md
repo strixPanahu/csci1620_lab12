@@ -2,7 +2,7 @@
 
 ## **SUBMISSION INSTRUCTIONS**
 
-- [ ] 0. Submit your GitHub repository link.
+- [x] 0. Submit your GitHub repository link.
 
 ## **QUESTION**
 
@@ -178,27 +178,25 @@
 
 		[x] ii. Incorrect docstrings (need only function description – don’t include param or return) 
 
-volume_down 
+	[x] g. volume_down 
 
-[x] -0.5pts: Missing type hinting (should return None) 
+		[x] i. Missing type hinting (should return None) 
 
-[x] -0.5pts: Incorrect docstrings (need only function description – don’t include param or return) 
+		[x] ii. Incorrect docstrings (need only function description – don’t include param or return) 
 
-str 
+	[x] h. str 
 
-[x] -1pt: Logic error (output when volume is muted) 
+		[x] i. Logic error (output when volume is muted) 
 
-[x] -1pt: Your output statements should follow the same format as the ones provided in the main.py file comments Advice: It’s better to use Television.MIN_CHANNEL rather than self.MIN_CHANNEL (refer to the discussion video minute 12:41 on the implication of using self vs the class name when it comes to class variables). 
+		[x] ii. Your output statements should follow the same format as the ones provided in the main.py file comments Advice: It’s better to use Television.MIN_CHANNEL rather than self.MIN_CHANNEL (refer to the discussion video minute 12:41 on the implication of using self vs the class name when it comes to class variables). 
 
-test_television.py 
+[x] 17. test_television.py 
 
-[x] -12pts: Use pytest library not unit test library (refer to the Testing notes and lecture. Lecture minute 33:18 to 43:20, Notes - slide 9 and 10) test_mute: 
+	[x] a. Use pytest library not unit test library (refer to the Testing notes and lecture. Lecture minute 33:18 to 43:20, Notes - slide 9 and 10) 
 
-[x] -1pt: Unit test fails 
+	[x] b. test_mute: Unit test fails 
 
-test_volume_up: 
-
-[x] -1pt: Unit test fails
+	[x] c. test_volume_up: Unit test fails
 
 	"C:/Program Files/JetBrains/PyCharm Community Edition 2023.3.2/plugins/python-ce/helpers/pycharm _jb_pytest_runner.py" --target test_television.py::TestTelevision 
 	Testing started at 8:50 PM ...

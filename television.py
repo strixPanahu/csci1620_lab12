@@ -94,17 +94,3 @@ class Television:
         return ("Power = " + str(self.__status)
                 + ", Channel = " + str(self.__channel)
                 + ", Volume = " + str(self.__volume))
-
-
-tv = Television()
-tv.power()
-tv.volume_up()
-tv.power()
-tv.mute()
-print(tv.__str__())
-
-tv = Television()
-tv.power()
-tv.volume_up()
-tv.mute()
-print(tv.__str__())
